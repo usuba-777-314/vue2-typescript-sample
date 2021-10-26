@@ -19,6 +19,12 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/todos",
+    name: "TodoList",
+    component: () =>
+      import(/* webpackChunkName: "todos" */ "../views/TodoList.vue"),
+  },
 ];
 
 const router = new VueRouter({
